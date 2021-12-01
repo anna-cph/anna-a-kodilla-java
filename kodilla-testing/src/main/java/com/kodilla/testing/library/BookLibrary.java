@@ -24,11 +24,13 @@ public class BookLibrary {
         //List<Book> bookList = new ArrayList<>();
         List<Book> resultList = libraryDatabase
                 .listBooksInHandsOf(libraryUser);
-        //if (bookList.size()´´)
-        //Book book = new Book("The book title", "The book author", 2000);
-        //bookList.add(book);
+        /*
+        if (bookList.size()´´)
+        Book book = new Book("The book title", "The book author", 2000);
+        bookList.add(book);
+         temporary returning list of one book
+        */
 
-        // temporary returning list of one book
         return resultList;
     }
 }
