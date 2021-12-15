@@ -9,7 +9,7 @@ import java.util.List;
 
 public class WorldTestSuite {
     @Test
-    void testAddCountry() {
+    void testGetPeopleQuantity() {
         //Given
         World theWorld = new World();
         Continent theContinent1 = new Continent("Asia");
