@@ -8,24 +8,25 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class SecondChallengeTestSuite {
     @Test
-    void probablyIWillNotThrowException() {
+    void willNotThrowException() throws Exception {
         //given
         SecondChallenge secondChallenge = new SecondChallenge();
 
         //when&then
-        assertDoesNotThrow(() -> secondChallenge.probablyIWillThrowException(2.0, 2.0));
+        //assertEquals("Done!", secondChallenge.probablyIWillThrowException(1.8, 1.0));
+        //assertDoesNotThrow(() -> secondChallenge.probablyIWillThrowException(1.8, 1.0));
+        assertAll(
+                () -> assertEquals("Done!", secondChallenge.probablyIWillThrowException(1.8, 1.0)),
+                () -> assertDoesNotThrow(() -> secondChallenge.probablyIWillThrowException(1.8, 1.0)));
     }
 
-   /* @Test
-    void probablyIWillThrowException() {
+   @Test
+    void willThrowException() {
         //given
         SecondChallenge secondChallenge = new SecondChallenge();
 
         //when&then
-        assertThrows(SecondChallenge.class, () -> secondChallenge.probablyIWillThrowException(2.0, 2.0));
-        assertDoesNotThrow(() -> secondChallenge.probablyIWillThrowException(1.9, 2.0));
+        assertThrows(Exception.class, () -> secondChallenge.probablyIWillThrowException(2.0, 2.0));
     }
-
-    */
 
 }
