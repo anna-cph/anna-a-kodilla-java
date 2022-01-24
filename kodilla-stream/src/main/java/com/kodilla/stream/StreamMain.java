@@ -19,7 +19,7 @@ public class StreamMain {
 
             System.out.println("# elements: " + theResultForumMap.size());             // [2]
             theResultForumMap.entrySet().stream()
-                .map(entry -> entry.getKey() + ": " + entry.getValue())                   // [3]
+                .map(entry -> entry.getKey() + ": " + entry.getValue() + "!")                   // [3]
                 .forEach(System.out::println);
 
         /* String theResultStringOfBooks = theBookDirectory.getList().stream()  // [1]
