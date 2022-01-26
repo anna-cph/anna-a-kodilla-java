@@ -4,15 +4,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FindFlight {
-    private Boolean canFlight;
-    private Map<Flight, Boolean> listFlights = new HashMap<>();
+    private Map<String, Boolean> listFlights = new HashMap<>();
 
-    public void findFlight(Flight flight) {
+    public FindFlight() {listFlights.put("Copenhagen", true);
+        listFlights.put("Tokyo", false);
+    }
 
-        if (flight != null) {
-            canFlight = true;
-        }
-
-        listFlights.put(flight, canFlight);
+    public boolean findFlight (Flight flight) throws RouteNotFoundException {
+        if (listFlights.containsKey(flight.getArrivalAirport()) && listFlights.get(flight.getArrivalAirport())) {
+            return true;
+        } throw new RouteNotFoundException();
     }
 }
+
+// Map<String, Shop> shops = new HashMap<>();
+//shop.put(computer, New ComputerShop);
+//klucz (produkt) sie nie moze powtarzac, dlatego Strin, na allegro wiem co chce kupic a nie wiem skad dlatego shop
