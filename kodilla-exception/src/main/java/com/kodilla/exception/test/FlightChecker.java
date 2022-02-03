@@ -12,7 +12,7 @@ public class FlightChecker {
             System.out.println("You can fly there.");
         } catch (RouteNotFoundException e) {
             System.out.println("The route is not found. Change your search.");
-        }finally {
+        } finally {
             System.out.println("I am gonna be here... always!");
         }
     }
