@@ -5,8 +5,8 @@ import challenges.carrental.User;
 public class OrderRequestRetriever {
     public OrderRequest retrieve() {
         User user = new User("Harry", "Potter");
-        ProductRepository productRepository = new ProductRepository();
+        Product product = new Product("computer");
 
-        return new OrderRequest(user, productRepository);
+        return new OrderRequest(user, product);
     }
 }

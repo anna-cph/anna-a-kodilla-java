@@ -4,18 +4,18 @@ import challenges.carrental.User;
 
 public class OrderRequest {
     private User user;
-    private ProductRepository productRepository;
+    private Product product;
 
-    public OrderRequest(User user, ProductRepository productRepository) {
+    public OrderRequest(User user, Product product) {
         this.user = user;
-        this.productRepository = productRepository;
+        this.product = product;
     }
 
     public User getUser() {
         return user;
     }
 
-    public ProductRepository getProductRepository() {
-        return productRepository;
+    public Product getProduct() {
+        return product;
     }
 }

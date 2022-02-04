@@ -9,7 +9,7 @@ public class Application {
         OrderRequest orderRequest = orderRequestRetriever.retrieve();
 
         OrderProcessor orderProcessor = new OrderProcessor(
-                new MailService(), new ProductOrderService(), new OrderRepositoryImpl());
+                new MailService(), new OrderRepositoryImpl(), new ProductOrderService());
         orderProcessor.process(orderRequest);
 }
 }
