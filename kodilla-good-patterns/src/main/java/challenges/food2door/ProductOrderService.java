@@ -1,7 +1,4 @@
-package challenges.allegro;
-
-import java.util.HashMap;
-import java.util.Map;
+package challenges.food2door;
 
 public class ProductOrderService implements OrderService {
 
