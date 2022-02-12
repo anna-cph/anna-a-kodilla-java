@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tests for playing with figures" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-02-11T16:00:18" hostname="MacBook-Pro-tilhrende-Anna.local" time="0.023">
+  <properties/>
+  <testcase name="testGetFigureTooBigIndex()" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TestTestingFigures" time="0.008"/>
+  <testcase name="testRemoveFigureExisting()" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TestTestingFigures" time="0.001"/>
+  <testcase name="testGetFigureNegativeIndex()" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TestTestingFigures" time="0.003"/>
+  <testcase name="testRemoveFigureNonExisting()" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TestTestingFigures" time="0.001"/>
+  <testcase name="testAddFigure()" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TestTestingFigures" time="0.001"/>
+  <testcase name="testGetFigureExisting()" classname="com.kodilla.testing.shape.ShapeCollectorTestSuite$TestTestingFigures" time="0.001"/>
+  <system-out><![CDATA[Preparing to execute test #1
+Preparing to execute test #2
+Preparing to execute test #3
+Preparing to execute test #4
+Preparing to execute test #5
+Preparing to execute test #6
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

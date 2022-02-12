@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.stream.world.WorldTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-11T16:00:17" hostname="MacBook-Pro-tilhrende-Anna.local" time="0.005">
+  <properties/>
+  <testcase name="testGetPeopleQuantity()" classname="com.kodilla.stream.world.WorldTestSuite" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

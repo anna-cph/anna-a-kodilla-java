@@ -1,8 +1,5 @@
 package com.kodilla.testing.shape;
 
-import com.kodilla.testing.forum.ForumComment;
-import com.kodilla.testing.forum.ForumPost;
-
 import java.util.*;
 
 public class ShapeCollector {

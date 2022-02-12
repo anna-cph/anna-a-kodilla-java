@@ -1,8 +1,5 @@
 package com.kodilla.exception.test;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class FlightChecker {
     public static void main(String[] args) {
         FindFlight flightFinder = new FindFlight();

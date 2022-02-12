@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.collection.CollectionTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-02-11T16:00:18" hostname="MacBook-Pro-tilhrende-Anna.local" time="0.044">
+  <properties/>
+  <testcase name="when create OddNumbersExterminator with empty list, then exterminate should return empty list" classname="com.kodilla.testing.collection.CollectionTestSuite" time="0.042"/>
+  <testcase name="when create OddNumbersExterminator with list of even and uneven numbers, then exterminate should return list with only even numbers" classname="com.kodilla.testing.collection.CollectionTestSuite" time="0.001"/>
+  <system-out><![CDATA[Test Case: begin
+Testing Empty List, the list contains []
+Test Case: end
+Test Case: begin
+Testing for even numbers- even numbers in the list [12, 134]
+Test Case: end
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
