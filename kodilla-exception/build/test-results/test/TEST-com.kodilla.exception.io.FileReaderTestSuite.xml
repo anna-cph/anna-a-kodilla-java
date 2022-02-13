@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.exception.io.FileReaderTestSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-02-11T16:00:15" hostname="MacBook-Pro-tilhrende-Anna.local" time="0.06">
+<testsuite name="com.kodilla.exception.io.FileReaderTestSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-02-13T18:38:42" hostname="MacBook-Pro-tilhrende-Anna.local" time="0.056">
   <properties/>
-  <testcase name="whenFileDosentExistsReadFileShouldThrowException()" classname="com.kodilla.exception.io.FileReaderTestSuite" time="0.043"/>
-  <testcase name="testReadFileWithName()" classname="com.kodilla.exception.io.FileReaderTestSuite" time="0.009"/>
-  <testcase name="testReadFile()" classname="com.kodilla.exception.io.FileReaderTestSuite" time="0.003"/>
+  <testcase name="whenFileDosentExistsReadFileShouldThrowException()" classname="com.kodilla.exception.io.FileReaderTestSuite" time="0.036"/>
+  <testcase name="testReadFileWithName()" classname="com.kodilla.exception.io.FileReaderTestSuite" time="0.011"/>
+  <testcase name="testReadFile()" classname="com.kodilla.exception.io.FileReaderTestSuite" time="0.005"/>
   <system-out><![CDATA[I am gonna be here... always!
 I am gonna be here... always!
 I am gonna be here... always!

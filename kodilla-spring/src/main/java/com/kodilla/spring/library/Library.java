@@ -11,7 +11,6 @@ public class Library {
     private final List<String> books = new ArrayList<>();
     private final LibraryDbController libraryDbController;
 
-    @Autowired
     public Library(LibraryDbController libraryDbController) {
         this.libraryDbController = libraryDbController;
     }
@@ -19,6 +18,7 @@ public class Library {
     /* public Library() {
         //do nothing
     }
+
      */
 
     public void saveToDb() {
