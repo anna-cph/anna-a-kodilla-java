@@ -13,28 +13,32 @@ public class Calculator {
     }
 
 
-    public void add(double a, double b) {
+    public double add(double a, double b) {
         double result = a + b;
         display.displayValue(result);
-        System.out.println("Adding " + a + " to " + b + ": " + display.displayValue(result));
+        //return "Adding " + a + " to " + b + ": " + display.displayValue(result);
+        return result;
     }
 
-    public void sub(double a, double b) {
+    public double sub(double a, double b) {
         double result = a - b;
         display.displayValue(result);
-        System.out.println("Subtracting " + a + " from " + b + ": " + display.displayValue(result));
+        return result;
+        //return "Subtracting " + a + " from " + b + ": " + display.displayValue(result);
     }
 
-    public void mul(double a, double b) {
+    public double mul(double a, double b) {
         double result = a * b;
         display.displayValue(result);
-        System.out.println("Multiplying " + a + " and " + b + ": " + display.displayValue(result));
+        return result;
+        //return "Multiplying " + a + " and " + b + ": " + display.displayValue(result);
     }
 
-    public void div(double a, double b) {
+    public double div(double a, double b) {
         double result = a / b;
         display.displayValue(result);
-        System.out.println("Dividing " + a + " by " + b + ": " + display.displayValue(result));
+        return result;
+        //return "Dividing " + a + " by " + b + ": " + display.displayValue(result);
     }
 
 }
