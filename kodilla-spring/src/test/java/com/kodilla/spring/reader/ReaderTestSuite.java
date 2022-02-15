@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 public class ReaderTestSuite {
 
-    /*
+
     @Test
     void testRead() {
         //Given
@@ -32,5 +32,5 @@ public class ReaderTestSuite {
         //Then
         System.out.println("Bean book2 was found in the container: " + book2Exists);
     }
-     */
+
 }
