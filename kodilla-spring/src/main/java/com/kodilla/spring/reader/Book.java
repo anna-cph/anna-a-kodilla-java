@@ -1,6 +1,6 @@
 package com.kodilla.spring.reader;
 
-public final class Book {
+public class Book {
     final String title;
 
     public Book(String title) {
