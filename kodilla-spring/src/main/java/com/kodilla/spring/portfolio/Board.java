@@ -25,12 +25,4 @@ public class Board {
         return doneList;
     }
 
-    @Override
-    public String toString() {
-        return "Board{" +
-                "toDoList=" + toDoList +
-                ", inProgressList=" + inProgressList +
-                ", doneList=" + doneList +
-                '}';
-    }
 }

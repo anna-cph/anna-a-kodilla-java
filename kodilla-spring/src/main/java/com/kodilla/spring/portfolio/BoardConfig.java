@@ -1,7 +1,12 @@
 package com.kodilla.spring.portfolio;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Scope;
+import org.springframework.scheduling.config.Task;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,21 +14,42 @@ import java.util.List;
 @Configuration
 public class BoardConfig {
 
-    Board board;
+    @Autowired
+    @Qualifier("toDoList")
+    @Lazy
+    TaskList toDoList;
 
-    /*
-    @Bean
-    public Board getBoard() {
-        //return new Board(toDoList.add("xxx"));
-        List<TaskList> toDoList1 = new ArrayList<>();
-        toDoList1.add("Drink water");
-        List<String> inProgressList1 = new ArrayList<>();
-        inProgressList1 .add("Bootcamp");
-        List<String> doneList1 = new ArrayList<>();
-        doneList1.add("Sleep");
-        return new Board(toDoList1, inProgressList1, doneList1)
+    @Autowired
+    @Qualifier("inProgressList")
+    @Lazy
+    TaskList inProgressList;
+
+    @Autowired
+    @Qualifier("doneList")
+    @Lazy
+    TaskList doneList;
+
+    @Bean(name = "toDoList")
+    @Scope("prototype")
+    public TaskList getToDoList() {
+        return new TaskList();
     }
 
-     */
+    @Bean(name = "inProgressList")
+    @Scope("prototype")
+    public TaskList getInProgressList() {
+        return new TaskList();
+    }
+
+    @Bean(name = "doneList")
+    @Scope("prototype")
+    public TaskList getDoneList() {
+        return new TaskList();
+    }
+
+    @Bean
+    public Board getBoard() {
+        return new Board(toDoList, inProgressList, doneList);
+    }
 
 }
