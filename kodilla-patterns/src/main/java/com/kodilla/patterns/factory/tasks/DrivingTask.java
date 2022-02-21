@@ -4,6 +4,7 @@ public class DrivingTask implements Task {
     String taskName;
     String where;
     String using;
+    boolean executed;
 
     public DrivingTask(String taskName, String where, String using) {
         this.taskName = taskName;
@@ -12,8 +13,10 @@ public class DrivingTask implements Task {
     }
 
     @Override
-    public String executeTask() {
-        return "Driving to: " + where + " with a car: " + using;
+    public void executeTask() {
+        if (where != null && using != null) {
+            executed = true;
+        }
     }
 
     @Override
@@ -23,10 +26,6 @@ public class DrivingTask implements Task {
 
     @Override
     public boolean isTaskExecuted() {
-        if (where != null && using != null) {
-            return true;
-        } else {
-            return false;
-        }
+        return executed;
     }
 }
