@@ -12,6 +12,7 @@ import java.util.List;
 public class Product {
     private int id;
     private String name;
+    private List<Item> items = new ArrayList<>();
 
     public Product(String name) {
         this.name = name;
@@ -41,5 +42,14 @@ public class Product {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @OneToMany(cascade = CascadeType.ALL)
+    public List<Item> getItems() {
+        return items;
+    }
+
+    public void setItems(List<Item> items) {
+        this.items = items;
     }
 }

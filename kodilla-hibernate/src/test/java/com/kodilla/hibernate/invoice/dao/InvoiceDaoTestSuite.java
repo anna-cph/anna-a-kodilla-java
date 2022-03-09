@@ -21,6 +21,12 @@ public class InvoiceDaoTestSuite {
         Product product = new Product("iphone");
         Item item1 = new Item(new BigDecimal(5400), 2, new BigDecimal(10800));
         Item item2 = new Item(new BigDecimal(5400), 1, new BigDecimal(5400));
+        item1.setInvoice(invoice);
+        item2.setInvoice(invoice);
+        item1.setProduct(product);
+        item2.setProduct(product);
+        product.getItems().add(item1);
+        product.getItems().add(item2);
         invoice.getItems().add(item1);
         invoice.getItems().add(item2);
 
@@ -31,6 +37,6 @@ public class InvoiceDaoTestSuite {
         //Then
 
         //CleanUp
-        //invoiceDao.deleteById();
+        invoiceDao.deleteAll();
     }
 }
